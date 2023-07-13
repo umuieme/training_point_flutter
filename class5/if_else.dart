@@ -16,6 +16,22 @@ void main() {
   print(isDvivisibleby5Or10UsingOr(20));
   print(isDvivisibleby5Or10UsingOr(11));
   print(isDvivisibleby5Or10UsingOr(15));
+
+  String name = "Umesh";
+  if (name.isEmpty) {
+    // invalid
+  }
+
+  List data = [];
+  if (data.isEmpty) {
+    print(" this is empty");
+  }
+
+  if (data.length > 10) {
+    print("the list is big");
+  } else {
+    print("The list is small");
+  }
 }
 
 void checkIfGreaterThan20(int number1) {

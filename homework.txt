@@ -1,0 +1,18 @@
+1. create a function which takes lenght and height as input and print * accordingly
+(length = 3,  height 2)
+***
+***
+
+2. create a function which takes a number as input and print * as follows
+
+input = 3
+
+*
+**
+***
+
+3. Write a function which takes a list of string as input and convert it to the list of string but in uppercase and return it;
+["apple", "Ball"] => ["APPLE", "BALL"];
+
+4. Write a function which takes a list of integer as input and returns the multiplication of all the numbers which is divisible by 5;
+[1,2,4,5,10,10,7] => 500
