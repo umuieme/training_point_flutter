@@ -5,7 +5,7 @@ void main() {
 
   int sum = 0;
 
-  for (int i = 0; i < data.length; i++) {
+  for (int i = 0; i < data.length; i) {
     if (i % 2 == 0) sum += data[i];
   }
   print(sum);
