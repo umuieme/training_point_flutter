@@ -27,6 +27,11 @@ void main() {
   late int b;
   b = 10;
   print(b);
+
+  print(max(10, 20));
+  print(max(null, 15));
+  print(max(2, null));
+  print(max(null, null));
 }
 
 void sum(int? number1, int? number2) {
@@ -43,6 +48,29 @@ String? capital(String? value) {
 
 String fullName(String firstName, String? lastName, {String? middleName}) {
   return "$firstName ${middleName?.toLowerCase().replaceAll("h", "z") ?? ""} ${lastName ?? ""}";
+}
+
+int? max(int? num1, int? num2) {
+  if (num1 != null && num2 != null) {
+    return num1 > num2 ? num1 : num2;
+  }
+  if (num1 == null) {
+    return num2 == null ? null : num2;
+  }
+  return num1;
+  // return num2 == null? num1: num2;
+  // return num1 == null ? num2 : num1;
+}
+
+void min(int num1, {int num2 = 8, int? num3}) {
+  num3 = num3 ?? 10;
+  if (num1 < num2 && num1 < num3) {
+    print("$num1 is minimum");
+  } else if (num2 < num1 && num2 < num3) {
+    print("$num2 is min");
+  } else {
+    print("$num3 is min");
+  }
 }
 
 
