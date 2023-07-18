@@ -23,7 +23,7 @@ class User {
   late int ageAfter20;
 
   User({required this.firstName, required String lastName}) {
-    print(firstName);
+    print(this.firstName);
     this.lastName = lastName;
     this.ageAfter20 = age - 20;
   }
@@ -52,8 +52,8 @@ Create a function called drive which takes number of KM to drive.
 This function will change totalDistance and petrolAmount as per input parameters
 
 Create factory constructor for car and bike which create instance of vehicle with proper type "car" and "bike" respectively with proper numberOfWheels.
-
 */
+
 class Vehicle {
   // type, numberOfWheels, mileage, totalDistanceTravelled, currentPterol,
   // drive function=> takes total km as input. this should update the currentPetrol and totalDistanceTravelled
